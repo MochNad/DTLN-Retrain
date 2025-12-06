@@ -586,7 +586,7 @@ class DTLN_model():
         early_stopping = EarlyStopping(monitor='val_loss', min_delta=0, 
             patience=10, verbose=0, mode='auto', baseline=None)
         # create model check pointer to save the best model
-        checkpointer = ModelCheckpoint(savePath+runName+'.h5',
+        checkpointer = ModelCheckpoint(savePath+runName+'.weights.h5',
                                        monitor='val_loss',
                                        verbose=1,
                                        save_best_only=True,
