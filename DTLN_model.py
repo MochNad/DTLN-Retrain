@@ -460,7 +460,7 @@ class DTLN_model():
         '''
         
         # use the Adam optimizer with a clipnorm of 3
-        optimizerAdam = keras.optimizers.Adam(lr=self.lr, clipnorm=3.0)
+        optimizerAdam = keras.optimizers.Adam(learning_rate=self.lr, clipnorm=3.0)
         # compile model with loss function
         self.model.compile(loss=self.lossWrapper(), optimizer=optimizerAdam)
         
